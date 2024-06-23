@@ -1,9 +1,9 @@
-'use client';
-import { github } from '@/app/utils/icons';
-import { Button } from '@/components/ui/button';
-import { useRouter } from 'next/navigation';
-import ThemeToggler from './ThemeToggler';
-import SearchDialog from './SearchDialog';
+"use client";
+import { github } from "@/app/utils/icons";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import ThemeToggler from "./ThemeToggler";
+import SearchDialog from "./SearchDialog";
 
 const Navbar = () => {
   const router = useRouter();
@@ -18,7 +18,9 @@ const Navbar = () => {
             <ThemeToggler />
             <Button
               variant="outline"
-              onClick={() => router.push('https://github.com')}
+              onClick={() =>
+                router.push("https://github.com/ozywashere/fsWeatherApp")
+              }
               className="source-code flex items-center gap-2"
             >
               {github} Source Code
